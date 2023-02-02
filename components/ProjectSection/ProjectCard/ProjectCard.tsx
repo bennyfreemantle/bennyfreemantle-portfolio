@@ -12,11 +12,11 @@ type ProjectCardProps = {
 };
 export default function ProjectCard({ project }: ProjectCardProps) {
   const [isHovered, setIsHovered] = useState(false);
-  const hoverStyles = isHovered ? "blur-sm" : "";
+  const hoverStyles = isHovered ? "blur-[2px]" : "";
 
   return (
     <div
-      className="relative w-full cursor-pointer sm:max-w-sm md:max-w-lg"
+      className="relative w-full cursor-pointer rounded-lg shadow-md shadow-zinc-900 sm:max-w-sm md:max-w-lg"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -29,15 +29,15 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         />
       </div>
       <div className="absolute inset-0 flex flex-col items-center justify-center gap-8 opacity-0 transition-opacity duration-200 hover:opacity-100">
-        <p className="text-center text-white">{project.about}</p>
+        <p className="p-2 text-center text-white">{project.about}</p>
         <div className="flex gap-4">
           <a href={project.codeLink} target={"_blank"} rel="noreferrer">
-            <button className="rounded bg-zinc-50  p-2 text-sm text-gray-900 transition-all duration-300  hover:scale-105 hover:bg-blue-600 hover:text-zinc-50">
+            <button className="rounded bg-zinc-50  p-2 text-sm text-zinc-900 transition-all duration-300  hover:scale-105 hover:bg-blue-600 hover:text-zinc-50">
               {"</Code>"}
             </button>
           </a>
           <a href={project.demoLink} target={"_blank"} rel="noreferrer">
-            <button className="rounded bg-zinc-50 p-2 text-sm text-gray-900 transition-all duration-300 hover:scale-105 hover:bg-blue-600 hover:text-zinc-50">
+            <button className="rounded bg-zinc-50 p-2 text-sm text-zinc-900 transition-all duration-300 hover:scale-105 hover:bg-blue-600 hover:text-zinc-50">
               {"Demo"}
             </button>
           </a>

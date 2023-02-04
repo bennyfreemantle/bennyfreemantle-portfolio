@@ -8,15 +8,17 @@ async function sendEmail(data: {
   message: string;
 }) {
   const transporter = nodemailer.createTransport({
-    service: "gmail",
+    host: "smtp.zoho.eu",
+    secure: true,
+    port: 465,
     auth: {
-      user: process.env.GMAIL_APP_EMAIL,
-      pass: process.env.GMAIL_APP_PASSWORD,
+      user: process.env.ZOHO_EMAIL,
+      pass: process.env.ZOHO_APP_PASSWORD,
     },
   });
 
-  const email = await transporter.sendMail({
-    from: data.email,
+  await transporter.sendMail({
+    from: process.env.ZOHO_EMAIL,
     to: process.env.EMAIL_RECEIVER,
     subject: `${data.name} wants to connect!`,
     text: data.message,

@@ -18,12 +18,13 @@ export default function Header() {
       }`}
     >
       <nav className="container mx-auto flex items-center justify-between p-4">
-        <div className="h-14 w-14 cursor-pointer items-start rounded-full grayscale">
+        <div className="rounded-full grayscale">
           <Image
             className="rounded-full"
             src={"/images/profile-picture.jpg"}
             alt="A profile picture of me, the author Ben Freemantle"
-            fill
+            width={55}
+            height={55}
           />
         </div>
         <div className="hidden md:flex md:flex-col md:items-center">

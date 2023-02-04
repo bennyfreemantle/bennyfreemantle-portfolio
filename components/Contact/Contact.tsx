@@ -1,6 +1,4 @@
-import React, { useState } from "react";
-
-import { BsFillHandThumbsUpFill } from "react-icons/bs";
+import React, { useEffect, useState } from "react";
 
 export default function Contact() {
   const [email, setEmail] = useState("");
@@ -8,7 +6,16 @@ export default function Contact() {
   const [message, setMessage] = useState("");
   const [emailSent, setEmailSent] = useState(false);
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  // Reset emailSent boolean
+  useEffect(() => {
+    if (emailSent) {
+      setTimeout(() => {
+        setEmailSent(false);
+      }, 2000);
+    }
+  }, [emailSent]);
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
 
     setEmailSent((prev) => !prev);
@@ -19,9 +26,21 @@ export default function Contact() {
       message,
     };
 
-    setEmail("");
-    setName("");
-    setMessage("");
+    try {
+      await fetch("http://localhost:3000/api/contact", {
+        method: "POST",
+        body: JSON.stringify(emailData),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }).then(() => {
+        setEmail("");
+        setName("");
+        setMessage("");
+      });
+    } catch (error) {
+      console.log("error");
+    }
   }
   return (
     <section id="contact">

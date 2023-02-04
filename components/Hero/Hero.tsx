@@ -10,12 +10,14 @@ export default function Hero() {
           <div className="px-4 text-center text-4xl font-bold">
             <h1>
               Fullstack Junior{" "}
-              <span className="text-blue-600">Web Developer</span>
+              <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
+                Web Developer
+              </span>
             </h1>
             <h1>Based in the UK</h1>
           </div>
           <div className="px-4 text-center">
-            <h1 className="text-sm font-light">
+            <h1 className="text-md font-light">
               Bringing a fresh perspective to the tech industry, helping shape
               the future
             </h1>
@@ -27,8 +29,9 @@ export default function Hero() {
             timely delivery." */}
           </div>
           <div className="mt-8 text-center">
-            <button className="text-md rounded bg-zinc-50 py-3 px-10 font-semibold text-zinc-900 transition-all duration-200 ease-in hover:bg-blue-600 hover:text-zinc-50">
+            <button className="text-md group relative z-10 rounded border-2 border-zinc-50 py-4 px-8 font-semibold uppercase tracking-widest text-zinc-50 transition-all duration-300 ease-in-out hover:text-zinc-50">
               Get In Touch
+              <span className="absolute left-0 top-0 -z-10 mx-auto block h-full w-0 rounded bg-gradient-to-r from-blue-400 to-blue-600 transition-all duration-300 ease-in-out group-hover:w-full"></span>
             </button>
             <BannerSection />
           </div>

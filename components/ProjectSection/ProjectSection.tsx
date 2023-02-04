@@ -3,30 +3,38 @@ import ProjectCard from "./ProjectCard/ProjectCard";
 
 const projects = [
   {
+    id: 1,
     image: "/images/project-thumbnails/pomodoro.jpg",
     title: "Pomodoro Timer",
-    about: "A simple interval timer to help boost productivity",
+    about:
+      "A simple interval timer to help boost productivity, A simple interval timer to help boost productivity A simple interval timer to help boost productivity",
     demoLink: "https://www.github.com/bennyfreemantle",
     codeLink: "https://www.github.com/bennyfreemantle",
   },
   {
+    id: 2,
     image: "/images/project-thumbnails/pomodoro.jpg",
-    title: "Pomodoro Timer",
-    about: "A simple interval timer to help boost productivity",
+    title: "Pomodoro Timer with some extra words that wrap",
+    about:
+      "A simple interval timer to help boost productivity, A simple interval timer to help boost productivity A simple interval timer to help boost productivity",
     demoLink: "https://www.github.com/bennyfreemantle",
     codeLink: "https://www.github.com/bennyfreemantle",
   },
   {
+    id: 3,
     image: "/images/project-thumbnails/pomodoro.jpg",
     title: "Pomodoro Timer",
-    about: "A simple interval timer to help boost productivity",
+    about:
+      "A simple interval timer to help boost productivity, A simple interval timer to help boost productivity A simple interval timer to help boost productivity",
     demoLink: "https://www.github.com/bennyfreemantle",
     codeLink: "https://www.github.com/bennyfreemantle",
   },
   {
+    id: 4,
     image: "/images/project-thumbnails/pomodoro.jpg",
     title: "Pomodoro Timer",
-    about: "A simple interval timer to help boost productivity",
+    about:
+      "A simple interval timer to help boost productivity, A simple interval timer to help boost productivity A simple interval timer to help boost productivity",
     demoLink: "https://www.github.com/bennyfreemantle",
     codeLink: "https://www.github.com/bennyfreemantle",
   },
@@ -36,12 +44,15 @@ export default function ProjectSection() {
   return (
     <section id="projects" className="bg-zinc-50">
       <div className="container mx-auto px-4 py-16">
-        <h1 className="pb-8 text-lg font-semibold uppercase text-gray-900">
-          Projects
+        <h3 className="inline border-b border-dashed border-zinc-900 text-sm uppercase text-blue-600">
+          Latest Works
+        </h3>
+        <h1 className="pt-2 pb-8 text-2xl font-semibold uppercase tracking-wide text-zinc-900">
+          My Projects
         </h1>
-        <div className="grid grid-cols-1 items-center justify-center gap-12 sm:grid-cols-2 xl:grid-cols-4">
-          {projects.map((project, index) => (
-            <ProjectCard key={index} project={project} />
+        <div className="flex flex-col justify-center gap-12">
+          {projects.map((project) => (
+            <ProjectCard key={project.id} project={project} />
           ))}
         </div>
       </div>

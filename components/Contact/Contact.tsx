@@ -56,7 +56,7 @@ export default function Contact() {
             <label htmlFor="email" className="text-zinc-200">
               Email
             </label>
-            <div className="rounded border">
+            <div className="rounded">
               <input
                 type="email"
                 name="email"
@@ -64,7 +64,7 @@ export default function Contact() {
                 value={email}
                 required
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full rounded bg-zinc-50 p-2 outline-none"
+                className="w-full rounded bg-zinc-50 p-2 outline-none ring-4 transition-all duration-150 ease-in focus:ring-blue-600"
               />
             </div>
           </div>
@@ -73,7 +73,7 @@ export default function Contact() {
             <label htmlFor="name" className="text-zinc-200">
               Name
             </label>
-            <div className="rounded border">
+            <div className="rounded">
               <input
                 type="text"
                 name="name"
@@ -81,7 +81,7 @@ export default function Contact() {
                 value={name}
                 required
                 onChange={(e) => setName(e.target.value)}
-                className="w-full rounded bg-zinc-50 p-2 outline-none"
+                className="w-full rounded bg-zinc-50 p-2 outline-none ring-4 transition-all duration-150 ease-in focus:ring-blue-600"
               />
             </div>
           </div>
@@ -89,7 +89,7 @@ export default function Contact() {
             <label htmlFor="message" className="text-zinc-200">
               Message
             </label>
-            <div className="rounded border">
+            <div className="rounded">
               <textarea
                 name="message"
                 id="message"
@@ -97,7 +97,7 @@ export default function Contact() {
                 value={message}
                 required
                 onChange={(e) => setMessage(e.target.value)}
-                className="w-full rounded bg-zinc-50 p-2 outline-none"
+                className="w-full rounded border-none bg-zinc-50 p-2 outline-none ring-4 transition-all duration-150 ease-in focus:ring-blue-600"
               />
             </div>
           </div>

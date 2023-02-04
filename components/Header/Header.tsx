@@ -18,7 +18,7 @@ export default function Header() {
       }`}
     >
       <nav className="container mx-auto flex items-center justify-between p-4">
-        <div className="h-14 w-14 cursor-pointer self-center rounded-full grayscale">
+        <div className="h-14 w-14 cursor-pointer items-start rounded-full grayscale">
           <Image
             className="rounded-full"
             src={"/images/profile-picture.jpg"}

@@ -18,6 +18,10 @@ export default function Contact() {
       name,
       message,
     };
+
+    setEmail("");
+    setName("");
+    setMessage("");
   }
   return (
     <section id="contact">
@@ -38,6 +42,7 @@ export default function Contact() {
                 type="email"
                 name="email"
                 id="email"
+                value={email}
                 required
                 onChange={(e) => setEmail(e.target.value)}
                 className="w-full rounded bg-zinc-50 p-2 outline-none"
@@ -54,6 +59,7 @@ export default function Contact() {
                 type="text"
                 name="name"
                 id="name"
+                value={name}
                 required
                 onChange={(e) => setName(e.target.value)}
                 className="w-full rounded bg-zinc-50 p-2 outline-none"
@@ -69,6 +75,7 @@ export default function Contact() {
                 name="message"
                 id="message"
                 rows={5}
+                value={message}
                 required
                 onChange={(e) => setMessage(e.target.value)}
                 className="w-full rounded bg-zinc-50 p-2 outline-none"

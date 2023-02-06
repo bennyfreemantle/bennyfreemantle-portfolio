@@ -7,18 +7,18 @@ import {
 const socials = [
   {
     name: "Github",
-    icon: <AiFillGithub size={25} />,
+    icon: <AiFillGithub size={35} />,
     link: "https://github.com/bennyfreemantle",
   },
   {
     name: "Twitter",
-    icon: <AiFillTwitterCircle size={25} />,
+    icon: <AiFillTwitterCircle size={35} />,
     link: "https://twitter.com/bennyfreemantle",
   },
 
   {
     name: "Linkedin",
-    icon: <AiFillLinkedin size={25} />,
+    icon: <AiFillLinkedin size={35} />,
     link: "https://www.linkedin.com/in/ben-freemantle/",
   },
 ];

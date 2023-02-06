@@ -21,12 +21,6 @@ export default function Hero() {
               Bringing a fresh perspective to the tech industry, helping shape
               the future
             </h1>
-            {/* "Fresh Perspective, Future-Forward Web Solutions. As a Fullstack
-            Junior Web Developer, I bring a unique blend of creativity and
-            technical skills to the table, delivering impactful and innovative
-            web solutions for businesses seeking a fresh perspective. Embrace
-            change and stand out from the crowd with my cutting-edge ideas and
-            timely delivery." */}
           </div>
           <div className="mt-8 text-center">
             <button className="text-md group relative z-10 rounded border-2 border-zinc-50 py-4 px-8 font-semibold uppercase tracking-widest text-zinc-50 transition-all duration-300 ease-in-out hover:text-zinc-50">

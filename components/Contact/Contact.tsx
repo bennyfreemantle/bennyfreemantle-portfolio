@@ -27,7 +27,7 @@ export default function Contact() {
     };
 
     try {
-      await fetch("http://localhost:3000/api/contact", {
+      await fetch(`/api/contact`, {
         method: "POST",
         body: JSON.stringify(emailData),
         headers: {

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import BannerSection from "../BannerSection/BannerSection";
 
@@ -8,7 +7,7 @@ export default function Hero() {
       <div className="container mx-auto flex h-[70vh] min-h-full flex-col justify-center px-4 text-zinc-50">
         <div className="flex flex-col gap-4">
           <div className="px-4 text-center text-4xl font-bold">
-            <h1>
+            <h1 className="font-sans">
               Fullstack Junior{" "}
               <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
                 Web Developer

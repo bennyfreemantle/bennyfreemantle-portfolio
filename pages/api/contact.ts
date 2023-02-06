@@ -57,7 +57,10 @@ async function sendEmail(data: {
   });
 }
 
-export default function handler(req: NextApiRequest, res: NextApiResponse) {
+export default async function handler(
+  req: NextApiRequest,
+  res: NextApiResponse
+) {
   const { email, name, message } = req.body;
   const data = {
     email,
@@ -67,7 +70,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 
   if (req.method === "POST") {
     try {
-      sendEmail(data);
+      await sendEmail(data);
       res.status(200).json({ message: "Email sent" });
     } catch (error) {
       console.log(error);

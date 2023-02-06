@@ -13,30 +13,39 @@ const projects = [
   },
   {
     id: 2,
-    image: "/images/project-thumbnails/pomodoro.jpg",
+    image: "/images/project-thumbnails/pomodoro.png",
     title: "Pomodoro Timer",
     about:
-      "A simple interval timer to help boost productivity, A simple interval timer to help boost productivity A simple interval timer to help boost productivity",
-    demoLink: "https://www.github.com/bennyfreemantle",
-    codeLink: "https://www.github.com/bennyfreemantle",
+      "A simple interval timer to help boost productivity. The user can set their preferred work, break & interval settings",
+    demoLink: "https://stunning-sunburst-930b76.netlify.app/",
+    codeLink: "https://github.com/bennyfreemantle/pomodoro-timer",
   },
   {
     id: 3,
-    image: "/images/project-thumbnails/pomodoro.jpg",
-    title: "Pomodoro Timer",
+    image: "/images/project-thumbnails/snip.png",
+    title: "Snip",
     about:
-      "A simple interval timer to help boost productivity, A simple interval timer to help boost productivity A simple interval timer to help boost productivity",
-    demoLink: "https://project-cinemate.netlify.app/",
-    codeLink: "https://www.github.com/bennyfreemantle",
+      "A mid bootcamp project. The idea is to have a repository of code snippets a user can create & comment on",
+    demoLink: "https://bennyfreemantle.github.io/higher-or-lower/",
+    codeLink: "",
   },
   {
     id: 4,
-    image: "/images/project-thumbnails/pomodoro.jpg",
-    title: "Pomodoro Timer",
+    image: "/images/project-thumbnails/hi-low.png",
+    title: "Higher Or Lower",
     about:
-      "A simple interval timer to help boost productivity, A simple interval timer to help boost productivity A simple interval timer to help boost productivity",
-    demoLink: "https://www.github.com/bennyfreemantle",
-    codeLink: "https://www.github.com/bennyfreemantle",
+      "One of my first experiences using a 3rd party API. Written with vanilla JS... Thank humanity for frameworks & libraries!",
+    demoLink: "https://bennyfreemantle.github.io/higher-or-lower/",
+    codeLink: "https://github.com/bennyfreemantle/higher-or-lower",
+  },
+  {
+    id: 5,
+    image: "/images/project-thumbnails/wedding-rsvp.png",
+    title: "RSVP",
+    about:
+      "A personal project for me and my now wife. Instead of collecting our guests RSVP meal preferences via post, they could instead submit online",
+    demoLink: "https://www.benandsaffswedding.co.uk/",
+    codeLink: "https://github.com/bennyfreemantle/rsvp",
   },
 ];
 

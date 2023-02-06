@@ -27,7 +27,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
     >
       <div
         ref={ref}
-        className={`relative aspect-square w-full max-w-xl rounded-md object-contain shadow-sm shadow-zinc-900`}
+        className={`relative aspect-square w-full max-w-xl rounded-md object-contain shadow-lg shadow-zinc-400`}
       >
         <Image
           src={project.image}

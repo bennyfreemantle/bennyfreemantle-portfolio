@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-zinc-900">
       <Head>
-        <title>Ben Freemantle Portfolio</title>
+        <title>Ben Freemantle | Web Developer</title>
         <meta
           name="description"
           content="Personal portfolio website to track my journey through the tech world"

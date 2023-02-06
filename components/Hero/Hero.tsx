@@ -22,10 +22,12 @@ export default function Hero() {
             </h1>
           </div>
           <div className="mt-8 text-center">
-            <button className="text-md group relative z-10 rounded border-2 border-zinc-50 py-4 px-8 font-semibold uppercase tracking-widest text-zinc-50 transition-all duration-300 ease-in-out hover:text-zinc-50">
-              Get In Touch
-              <span className="absolute left-0 top-0 -z-10 mx-auto block h-full w-0 rounded bg-gradient-to-r from-blue-400 to-blue-600 transition-all duration-300 ease-in-out group-hover:w-full"></span>
-            </button>
+            <a href="#contact">
+              <button className="text-md group relative z-10 rounded border-2 border-zinc-50 py-4 px-8 font-semibold uppercase tracking-widest text-zinc-50 transition-all duration-300 ease-in-out hover:text-zinc-50">
+                Get In Touch
+                <span className="absolute left-0 top-0 -z-10 mx-auto block h-full w-0 rounded bg-gradient-to-r from-blue-400 to-blue-600 transition-all duration-300 ease-in-out group-hover:w-full"></span>
+              </button>
+            </a>
             <BannerSection />
           </div>
         </div>

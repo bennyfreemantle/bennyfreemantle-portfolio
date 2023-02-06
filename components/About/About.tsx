@@ -4,7 +4,7 @@ import ContentBlock from "./ContentBlock/ContentBlock";
 export default function About() {
   return (
     <section id="about">
-      <div className="container mx-auto flex flex-col gap-4 px-4 py-16">
+      <div className="container mx-auto my-16 flex flex-col gap-4 px-4 py-16">
         <div>
           <h1 className="pt-2 pb-8 text-2xl font-semibold uppercase tracking-wide text-zinc-50">
             A little about me

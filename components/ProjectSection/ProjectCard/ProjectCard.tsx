@@ -30,11 +30,10 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         className={`relative aspect-square w-full max-w-xl rounded-md object-contain shadow-sm shadow-zinc-900`}
       >
         <Image
-          src={"/images/project-thumbnails/pomodoro.jpg"}
+          src={project.image}
           alt={""}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw"
-          loading="lazy"
           className="rounded-md"
         />
       </div>

@@ -4,17 +4,17 @@ import ProjectCard from "./ProjectCard/ProjectCard";
 const projects = [
   {
     id: 1,
-    image: "/images/project-thumbnails/pomodoro.jpg",
-    title: "Pomodoro Timer",
+    image: "/images/project-thumbnails/cinemate.png",
+    title: "CineMate",
     about:
-      "A simple interval timer to help boost productivity, A simple interval timer to help boost productivity A simple interval timer to help boost productivity",
-    demoLink: "https://www.github.com/bennyfreemantle",
-    codeLink: "https://www.github.com/bennyfreemantle",
+      "A 4 week, end of bootcamp final project. The idea of the app is to keep track of all of your friends movie recommendations",
+    demoLink: "https://project-cinemate.netlify.app/",
+    codeLink: "https://github.com/bennyfreemantle/404-team-name-not-found",
   },
   {
     id: 2,
     image: "/images/project-thumbnails/pomodoro.jpg",
-    title: "Pomodoro Timer with some extra words that wrap",
+    title: "Pomodoro Timer",
     about:
       "A simple interval timer to help boost productivity, A simple interval timer to help boost productivity A simple interval timer to help boost productivity",
     demoLink: "https://www.github.com/bennyfreemantle",
@@ -26,7 +26,7 @@ const projects = [
     title: "Pomodoro Timer",
     about:
       "A simple interval timer to help boost productivity, A simple interval timer to help boost productivity A simple interval timer to help boost productivity",
-    demoLink: "https://www.github.com/bennyfreemantle",
+    demoLink: "https://project-cinemate.netlify.app/",
     codeLink: "https://www.github.com/bennyfreemantle",
   },
   {
@@ -52,7 +52,9 @@ export default function ProjectSection() {
         </h1>
         <div className="flex flex-col justify-center gap-12">
           {projects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
+            <div key={project.id}>
+              <ProjectCard key={project.id} project={project} />
+            </div>
           ))}
         </div>
       </div>

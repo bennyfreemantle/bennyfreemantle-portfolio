@@ -26,7 +26,7 @@ const projects = [
     title: "Snip",
     about:
       "A mid bootcamp project. The idea is to have a repository of code snippets a user can create & comment on",
-    demoLink: "https://bennyfreemantle.github.io/higher-or-lower/",
+    demoLink: "",
     codeLink: "",
   },
   {
@@ -44,7 +44,7 @@ const projects = [
     title: "RSVP",
     about:
       "A personal project for me and my now wife. Instead of collecting our guests RSVP meal preferences via post, they could instead submit online",
-    demoLink: "https://www.benandsaffswedding.co.uk/",
+    demoLink: "",
     codeLink: "https://github.com/bennyfreemantle/rsvp",
   },
 ];

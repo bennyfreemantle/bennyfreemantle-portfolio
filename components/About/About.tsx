@@ -14,47 +14,25 @@ export default function About() {
           <div className="flex flex-col gap-6 lg:flex-row lg:gap-36">
             <ContentBlock title="Who Am I ?">
               <p className="leading-snug">
-                Hi there! I&apos;m Ben, I&apos;m a junior developer based in
-                England. I&apos;ve always been fascinated with technology and
-                gaming, ever since I was a kid. I used to spend hours tinkering
-                with gadgets and playing games, that interest has only continued
-                to grow as I&apos;ve gotten older.
+              Hi there! I'm Ben, a Software Engineer based in England with a strong interest in technology and gaming. 
+              My fascination with these fields has shaped my career path, leading me to explore how I can contribute to the tech industry.
               </p>
             </ContentBlock>
             <ContentBlock title="Journey Through The School of Code Bootcamp">
               <p className="leading-snug">
-                I decided to turn my passion into a career, so I enrolled in the
-                School of Code bootcamp. It was a life-changing decision for me,
-                and I learned so much about coding and about myself. The
-                bootcamp was an incredible journey of self-discovery, and it
-                opened up so many opportunities for me. I got to connect with
-                amazing, hardworking individuals from all walks of life, and
-                I&apos;m grateful for the experience.
+              I made the decision to pursue my passion by enrolling in the School of Code bootcamp. This experience was transformative, enhancing my coding skills and personal growth. I connected with a diverse group of individuals, each bringing unique insights and perspectives, which enriched my learning journey
               </p>
             </ContentBlock>
           </div>
           <div className="flex flex-col gap-6 lg:flex-row lg:gap-36">
-            <ContentBlock title="Innovating with a Fresh Perspective">
+            <ContentBlock title="My Personal Mission">
               <p className="leading-snug">
-                As a junior developer, I bring a fresh perspective and drive to
-                innovate to the table. I have a passion for exploration and
-                continuous learning, and I approach challenges with a unique
-                perspective. I&apos;m dedicated to creating projects that not
-                only look great but are accessible.
+              I strive to offer a fresh perspective and a commitment to innovation. I’m passionate about exploring new technologies and continuously improving my skill set. Proficient in TypeScript and AWS services, I approach challenges with a problem-solving mindset, ensuring that my projects are both functional and user-friendly.
               </p>
             </ContentBlock>
-            <ContentBlock title="Balancing Adventure and Tech">
+            <ContentBlock title="Outside of Coding">
               <p className="leading-snug">
-                When I&apos;m not coding, I love to go on adventures and seek
-                out new challenges. I love exploring new destinations and
-                cultures, staying up-to-date on the latest tech advancements,
-                gaming, and finding new ways to push my limits. I recently went
-                on a trip to Bali for my honeymoon, and it was an incredible
-                experience. We washed elephants, explored the sacred Monkey
-                forest, and went on a Jungle Quad biking adventure. My love for
-                exploration, learning, and growth drives me and keeps me
-                motivated, and I bring that same passion and determination to
-                every project I work on.
+              When I’m not coding, you can usually find me gaming or hanging out with friends, diving into new titles and enjoying some friendly competition. I also love to travel, discovering new places and cultures whenever I get the chance. Whether exploring the latest tech trends or planning my next adventure, I believe these experiences keep my curiosity alive and add an exciting dimension to my life.
               </p>
             </ContentBlock>
           </div>

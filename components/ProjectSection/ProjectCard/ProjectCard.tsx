@@ -1,5 +1,6 @@
 import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useRef, useState } from "react";
 
 type ProjectCardProps = {
@@ -49,9 +50,17 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           </span>
         </h1>
         <p className="py-10 sm:w-5/6">{project.about}</p>
-        <button className="group relative z-10 rounded border-2 border-slate-600 py-4 px-8 uppercase tracking-widest text-zinc-900">
-          Details
-        </button>
+        {project.demoLink ? (
+          <button className="group relative z-10 rounded border-2 border-slate-600 py-4 px-8 uppercase tracking-widest text-zinc-900">
+            <a href={project.demoLink} target="_blank" rel="noopener noreferrer">
+              Details
+            </a>
+          </button>
+        ) : (
+          <button disabled className="group relative z-10 rounded border-2 border-slate-600 py-4 px-8 uppercase tracking-widest text-zinc-900 line-through">
+            Details
+          </button>
+        )}
       </div>
     </div>
   );

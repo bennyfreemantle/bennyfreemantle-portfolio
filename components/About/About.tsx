@@ -14,7 +14,7 @@ export default function About() {
           <div className="flex flex-col gap-6 lg:flex-row lg:gap-36">
             <ContentBlock title="Who Am I ?">
               <p className="leading-snug">
-              Hi there! I'm Ben, a Software Engineer based in England with a strong interest in technology and gaming. 
+              Hi there! I&apos;m Ben, a Software Engineer based in England with a strong interest in technology and gaming. 
               My fascination with these fields has shaped my career path, leading me to explore how I can contribute to the tech industry.
               </p>
             </ContentBlock>
@@ -27,7 +27,7 @@ export default function About() {
           <div className="flex flex-col gap-6 lg:flex-row lg:gap-36">
             <ContentBlock title="My Personal Mission">
               <p className="leading-snug">
-              I strive to offer a fresh perspective and a commitment to innovation. I’m passionate about exploring new technologies and continuously improving my skill set. Proficient in TypeScript and AWS services, I approach challenges with a problem-solving mindset, ensuring that my projects are both functional and user-friendly.
+              I strive to offer a fresh perspective and a commitment to innovation. I&apos;m passionate about exploring new technologies and continuously improving my skill set. Proficient in TypeScript and AWS services, I approach challenges with a problem-solving mindset, ensuring that my projects are both functional and user-friendly.
               </p>
             </ContentBlock>
             <ContentBlock title="Outside of Coding">

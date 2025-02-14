@@ -13,7 +13,7 @@ export default function Home() {
         <title>Ben Freemantle | Web Developer</title>
         <meta
           name="description"
-          content="Personal portfolio website to track my journey through the tech world"
+          content="Personal portfolio website to track my journey through the tech world."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
